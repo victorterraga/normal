@@ -9,10 +9,7 @@ import (
 
 func getNormDistro(x int, mu float64, sigma float64) {
 	for i := 0; i < x; i++ {
-		fmt.Printf("%.2f", rand.NormFloat64()*float64(sigma)+float64(mu))
-		if i < x-1 {
-			fmt.Printf(",")
-		}
+		fmt.Printf("%.2f\n", rand.NormFloat64()*float64(sigma)+float64(mu))
 	}
 }
 
